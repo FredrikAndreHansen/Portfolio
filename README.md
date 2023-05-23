@@ -1,4 +1,6 @@
 # Portfolio
+My personal portfolio to showcase my work.
+The link to the site is: https://fphportfolio.netlify.app
 
 Main page is index.html
 
