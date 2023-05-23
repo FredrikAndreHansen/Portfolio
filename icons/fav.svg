@@ -1,3 +1,25 @@
-<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M128 32C74.9807 32 32 74.9807 32 128V384C32 437.019 74.9807 480 128 480H384C437.019 480 480 437.019 480 384V128C480 74.9807 437.019 32 384 32H128ZM168 108C148.118 108 132 124.118 132 144V384C132 395.046 140.954 404 152 404C163.046 404 172 395.046 172 384V276H336C347.046 276 356 267.046 356 256C356 244.954 347.046 236 336 236H172V148H360C371.046 148 380 139.046 380 128C380 116.954 371.046 108 360 108H168Z" fill="#a52a2a" id="id_102"></path>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FF8A66;}
+	.st1{fill:none;}
+	.st2{enable-background:new    ;}
+	.st3{fill:#FFFFFF;}
+</style>
+<g id="Layer_1_1_">
+<g id="Layer_2_background">
+<g>
+<g>
+<circle class="st0" cx="256.1" cy="255.7" r="239.3" id="id_104" style="fill: rgb(165, 42, 42);"></circle>
+</g>
+</g>
+</g>
+</g>
+<g id="Layer_2">
+<g>
+<rect x="120.1" y="134.1" class="st1" width="269.8" height="251.8" id="id_105"></rect>
+</g>
+<g class="st2">
+<path class="st3" d="M191.4,384.7V134.2H330v29.6H218.6v77.6H315v29.6h-96.4v113.8H191.4z" id="id_106" style="fill: rgb(240, 255, 255);"></path>
+</g>
+</g>
 </svg>

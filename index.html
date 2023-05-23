@@ -5,60 +5,211 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fredrik Palladino Hansen Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="/icons/fav.svg">
 
-    <script defer src="app.js"></script>
+    <meta name="description" content="Fredrik Palladino Hansen portfolio. Showcasing all my work as a fullstack web developer.">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript, TypeScript, Angular, Three.js, PHP, MySQL, WordPress, Photoshop">
+    <meta name="author" content="Fredrik Palladino Hansen">
+
+    <link rel="icon" type="image/x-icon" href="/icons/fav.svg">
     
-    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="/style/phone.css" media="only screen and (max-width: 599px)"></link>
+    <link rel="stylesheet" href="/style/smallTablet.css" media="only screen and (min-width: 600px) and (max-width: 1149px)"></link>
+    <link rel="stylesheet" href="/style/tablet.css" media="only screen and (min-width: 1150px) and (max-width: 1699px)"></link>
+    <link rel="stylesheet" href="/style/computer.css" media="only screen and (min-width: 1700px) and (max-width: 2499px)"></link>
+    <link rel="stylesheet" href="/style/bigScreen.css" media="only screen and (min-width: 2500px)"></link>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Oswald:wght@500&display=swap" rel="stylesheet">
-</head>
-<body>
 
-    <menu class="landing-menu">
-        <menuitem class="landing-menu-item">About</menuitem>
-        <menuitem class="landing-menu-item">Projects</menuitem>
-        <menuitem class="landing-menu-item">Contact</menuitem>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script type="module" src="/src/index.js"></script>
+</head>
+
+<div class="page-loader"></div>
+
+<!--Mobile menu-->
+<button class="mobile-menu remove-on-monitor website-tab">
+    <img class="mobile-menu-icon" src="/icons/mobilemenu.svg" alt="Mobile menu icon" />
+</button>
+
+<div class="mobile-menu-section remove-on-monitor hide-mobile">
+    
+    <button class="nobtnMargin exit-img mobile-menu-tab exit-img-mobile ext-mobile-function" tabindex="-1">
+        <img class="exit-img-mobile" src="/icons/exit-red.svg" alt="Exit icon" />
+    </button>
+    <a href="#landing-id" id="landing-selector" class="mobile-menu-tab ext-mobile-function" tabindex="-1">
+        <img class="main-menu-icon-mobile" src="/icons/fav.svg" alt="Website icon" />
+    </a>
+    <hr class="hr-mobile"/>
+    <div class="mobile-menu-items-margin">
+
+        <button class="mobile-menu-item mobile-menu-tab about-selector ext-mobile-function" tabindex="-1">About</button>
+
+        <button class="mobile-menu-item mobile-menu-tab projects-selector ext-mobile-function" tabindex="-1">Projects</button>
+
+        <a href="#contact-id" class="mobile-menu-tab ext-mobile-function" tabindex="-1"><div class="mobile-menu-item">Contact</div></a>
+
+    </div>
+    
+    <div class="prevent-selectors"></div>
+</div>
+<!--Computer menu-->
+<div class="main-menu-back hide-menu remove-on-phone">
+
+    <div class="main-menu-icon-margin">
+        <a href="#landing-id" id="landing-selector">
+            <img class="main-menu-icon" src="/icons/fav.svg" alt="Website icon" />
+        </a>
+    </div>
+  
+    <menu class="main-menu">
+        <button class="nobtn main-menu-item about-selector">About</button>
+        <button class="nobtn main-menu-item projects-selector">Projects</button>
+        <a href="#contact-id" class="contact-selector main-menu-item">Contact</a>
     </menu>
 
-    <section class="landing" id="scrollable">
-        <img class="landing-img" src="/images/fredrik.jpg">
+</div>
+
+<div class="element-guard"></div>
+
+<section class="about hide">
+
+    <button class="nobtnMargin exit-img about-tab" tabindex="-1">
+        <img class="exit-img" src="/icons/exit.svg" alt="Exit icon" />
+    </button>
+
+    <h3 class="hidden-section-header">About</h3>
+    <hr class="chr">
+    <!--<div class="small-space"></div>-->
+    <div class="center-vertical-align-container">
+        <div class="center-vertical-align">
+            <p class="white-p">My name is Fredrik and I am a web developer from Norway!</p>
+            <p class="white-p">I have a bachelor's degree in Web Development, graduated in 2016, NTNU Gjøvik.</p>
+            <p class="white-p">I like to make websites from the bottom up and keeping myself updated with the latest technologies and frameworks. I like to write object oriented code and keeping it to the MVC framework.</p>
+            <p class="white-p">On my freetime I like to make video games and play the bass guitar!</p>
+        </div>
+    </div>
+</section>
+
+<section class="projects hide">
+
+    <div class="project-info hide-info">
+        
+    </div>
+
+    <div id="projects-blur">
+
+        <button class="nobtnMargin exit-img projects-tab" tabindex="-1">
+            <img class="exit-img" src="/icons/exit.svg" alt="Exit icon" />
+        </button>
+        
+        <div class="project-sort remove-on-phone">
+
+            <p class="white-p-projects-section">Sort by</p>
+
+            <button class="nobtn wrap-projects-sort projects-tab" id="javascript-sort" tabindex="-1">
+                <img class="skill-icon-small" src="/icons/javascript.svg" alt="JavaScript icon" />
+                <p class="white-p-extra-small">JavaScript</p>
+            </button>
+
+            <button class="nobtn wrap-projects-sort projects-tab" id="php-sort" tabindex="-1">
+                <img class="skill-icon-small" src="/icons/php.svg" alt="PHP icon" />
+                <p class="white-p-extra-small">PHP</p>
+            </button>
+
+            <button class="nobtn wrap-projects-sort projects-tab" id="wordpress-sort" tabindex="-1">
+                <img class="skill-icon-small" src="/icons/wordpress.svg" alt="WordPress icon" />
+                <p class="white-p-extra-small">WordPress</p>
+            </button>
+
+        </div>
+
+        <h3 class="hidden-section-header">Projects</h3>
+        <hr class="chr">
+
+        <div class="project-sort remove-on-monitor">
+
+            <p class="white-p-projects-section">Sort by</p>
+
+            <button class="nobtn wrap-projects-sort projects-tab" id="javascript-sort" tabindex="-1">
+                <img class="skill-icon-small" src="/icons/javascript.svg" alt="JavaScript icon" />
+                <p class="white-p-extra-small">JavaScript</p>
+            </button>
+
+            <button class="nobtn wrap-projects-sort projects-tab" id="php-sort" tabindex="-1">
+                <img class="skill-icon-small" src="/icons/php.svg" alt="PHP icon" />
+                <p class="white-p-extra-small">PHP</p>
+            </button>
+
+            <button class="nobtn wrap-projects-sort projects-tab" id="wordpress-sort" tabindex="-1">
+                <img class="skill-icon-small" src="/icons/wordpress.svg" alt="WordPress icon" />
+                <p class="white-p-extra-small">WordPress</p>
+            </button>
+
+        </div>
+        
+        <div class="all-projects">
+        
+        </div>
+    </div>
+
+</section>
+
+<body class="prevent-scroll">
+    <div id="page">
+
+    <div class="popup">
+        <div class="loading"><img class="skill-icon" src="/icons/loading.svg" alt="Loading icon" /></div>
+        <div class="popup-inner hide"></div>
+    </div>
+
+    <menu class="landing-menu">
+        <button class="nobtn landing-menu-item about-selector website-tab">About</button>
+        <button class="nobtn landing-menu-item projects-selector website-tab">Projects</button>
+        <a href="#contact-id" class="contact-selector landing-menu-item website-tab">Contact</a>
+    </menu>
+
+    <section class="landing" id="landing-id">
+    
+        <img class="landing-img" src="/images/fredrik.jpg" alt="Fredrik Palladino Hansen profile"/>
         <h1 class="landing-h1">FREDRIK PALLADINO HANSEN</h1>
         <h2 class="landing-h2">Hi, my name is Fredrik and I am a web developer from Norway!</h2>
         <hr class="chr">
 
         <div class="wrap sosial-link">
-            <a href="https://www.linkedin.com/in/fredrik-palladino-hansen-b92187119" target="_blank">
-                <div class="sosial-icon"><img class="sosial-img" src="/icons/linkedin.svg"></div>
+            <a href="https://www.linkedin.com/in/fredrik-palladino-hansen-b92187119" target="_blank" class="website-tab">
+                <div class="sosial-icon"><img class="sosial-img" src="/icons/linkedin.svg" alt="LinkedIn icon" /></div>
                 <p class="white-sosial-p">LinkedIn</p>
             </a>
         </div>
 
         <div class="wrap sosial-link">
-            <a href="https://github.com/fredrikAndreHansen" target="_blank">
-                <div class="sosial-icon"><img class="sosial-img" src="/icons/github.svg"></div>
+            <a href="https://github.com/fredrikAndreHansen" target="_blank" class="website-tab">
+                <div class="sosial-icon"><img class="sosial-img" src="/icons/github.svg" alt="GitHub icon" /></div>
                 <p class="white-sosial-p">GitHub</p>
             </a>
         </div>
         
         <div class="wrap sosial-link">
-            <a href="#">
-                <div class="sosial-icon"><img class="sosial-img" src="/icons/contact.svg"></div>
+            <a href="#contact-id" class="contact-selector website-tab">
+                <div class="sosial-icon"><img class="sosial-img" src="/icons/contact.svg" alt="Contact icon" /></div>
             <p class="white-sosial-p">Contact</p>
             </a>
         </div>
         
-        <a href="#skills-section-id" class="skill-section-pointer">
-            <img class="pointerIntro" src="/icons/pointer.svg">
+        <a href="#skills-id" class="skill-section-pointer website-tab">
+            <img class="pointer-intro" src="/icons/pointer.svg" alt="Arrow pointer down icon" />
         </a>
+
+        <div id="skills-id"></div>
+
+    
     </section>
 
-    <div class="skills-section-margin">
-    <div id="skills-section-id">
-    </div>
-    </div>
+    <div class="skills-section-margin" id="skills-id"></div>
 
     <section class="skills-section">
         <div class="skills-align reveal">
@@ -66,43 +217,43 @@
                 <h3 class="white-h3">Skills</h3>
                 <div class="skills-inner">
                     <div class="wrap">
-                        <img class="skill-icon" src="/icons/html.svg">
+                        <img class="skill-icon" src="/icons/html.svg" alt="HTML5 icon" />
                         <p class="white-skills-p">HTML5</p>
                     </div>
                     <div class="wrap">
-                        <img class="skill-icon" src="/icons/css.svg">
+                        <img class="skill-icon" src="/icons/css.svg" alt="CSS3 icon" />
                         <p class="white-skills-p">CSS3</p>
                     </div>
                     <div class="wrap">
-                        <img class="skill-icon" src="/icons/javascript.svg">
+                        <img class="skill-icon" src="/icons/javascript.svg" alt="JavaScript icon" />
                         <p class="white-skills-p">JavaScript</p>
                     </div>
                     <div class="wrap">
-                        <img class="skill-icon" src="/icons/typescript.svg">
+                        <img class="skill-icon" src="/icons/typescript.svg" alt="TypeScript icon" />
                         <p class="white-skills-p">TypeScript</p>
                     </div>
                     <div class="wrap">
-                        <img class="skill-icon" src="/icons/angular.svg">
+                        <img class="skill-icon" src="/icons/angular.svg" alt="Angular icon" />
                         <p class="white-skills-p">Angular</p>
                     </div>
                     <div class="wrap">
-                        <img class="skill-icon" src="/icons/threejs.svg">
+                        <img class="skill-icon" src="/icons/threejs.svg" alt="Three.js icon" />
                         <p class="white-skills-p">Three.js</p>
                     </div>
                     <div class="wrap">
-                        <img class="skill-icon" src="/icons/php.svg">
+                        <img class="skill-icon" src="/icons/php.svg" alt="PHP icon" />
                         <p class="white-skills-p">PHP</p>
                     </div>
                     <div class="wrap">
-                        <img class="skill-icon" src="/icons/mysql.svg">
+                        <img class="skill-icon" src="/icons/mysql.svg" alt="MySQL icon" />
                         <p class="white-skills-p">MySQL</p>
                     </div>
                     <div class="wrap">
-                        <img class="skill-icon" src="/icons/wordpress.svg">
+                        <img class="skill-icon" src="/icons/wordpress.svg" alt="WordPress icon" />
                         <p class="white-skills-p">WordPress</p>
                     </div>
                     <div class="wrap">
-                        <img class="skill-icon" src="/icons/photoshop.svg">
+                        <img class="skill-icon" src="/icons/photoshop.svg" alt="Photoshop icon" />
                         <p class="white-skills-p">Photoshop</p>
                     </div>
                 </div>
@@ -115,64 +266,155 @@
     <section class="project-section">
 
         <!-- Project 1-->
-        <div class="project-wrapper1">
+
+        <!-- Phone view-->
+        <div class="remove-on-monitor">
+            <h3 class="red-h3">Pucci Games</h3>
+            <p class="black-p-header">Made with</p>
+
+            <div class="skills-inner-phone">
+                <div class="wrap-phone">                
+                    <img class="skill-icon-small" src="/icons/javascript.svg" alt="JavaScript icon" />
+                    <p class="black-p-header-small">JavaScript</p>
+                </div>
+                <div class="wrap-phone">
+                    <img class="skill-icon-small" src="/icons/threejs.svg" alt="Three.js icon" />
+                    <p class="black-p-header-small">Three.js</p>
+                </div>
+                <div class="wrap-phone">
+                    <img class="skill-icon-small" src="/icons/php.svg" alt="PHP icon" />
+                    <p class="black-p-header-small">PHP</p>
+                </div>
+                <div class="wrap-phone">
+                    <img class="skill-icon-small" src="/icons/mysql.svg" alt="MySQL icon" />
+                    <p class="black-p-header-small">MySQL</p>
+                </div>
+            </div>
+
+            <div class="skills-inner-phone">
+                <div class="monitor-wrapper-phone">
+                    <img class="project-content" src="/images/puccigamesPC.jpg" alt="Pucci Games front page cover for PC" />
+                    <img class="monitor-cover-right-img" src="/images/monitorcover.png" alt="Monitor cover" />
+                </div>
+            </div>
+
+            <div class="text-wrap">
+                <p class="black-p">Pucci Games is a site about the video games I make.</p>
+                <p class="black-p">I like to make games on my freetime using GameMaker Studio and Photoshop, and I keep all my progress about my games here!</p>
+                <p class="black-p">I use PHP and MySQL on the back-end, the code is object oriented and structured after the MVC(Model View Controller) pattern.</p>
+                <p class="black-p">The back-end is needed for having a blog, posting updates about my games, submitting game assets and allowing people to create users and leave comments to all my conent.</p>
+                <p class="black-p">I use JavaScript and Three.js on the front-end. Minor functionalities are made with JavaScript and all 3D graphics are made with Three.js.</p>
+            </div>
+
+            <div class="skills-inner-phone">
+                <a href="https://www.puccigames.com" target="_blank" class="btn website-tab">View<img class="btn-icon" src="/icons/eye.svg" alt="View icon" /></a>
+
+                <a href="https://github.com/FredrikAndreHansen/PucciGames" target="_blank" class="btn website-tab">Code<img class="btn-icon" src="/icons/code.svg" alt="Code icon" /></a>
+            </div>
+
+        </div>
+        <!-- End of phone view -->
+
+        <!-- Monitor view -->
+        <div class="project-wrapper1 remove-on-phone">
 
             <div class="project-element">
+      
                 <h3 class="red-h3">Pucci Games</h3>
                 <p class="black-p-header">Made with</p>
                 <div class="skills-inner">
-                    <div class="wrap">
-                        <img class="skill-icon-small" src="/icons/javascript.svg">
+                    <div class="wrap">                
+                        <img class="skill-icon-small" src="/icons/javascript.svg" alt="JavaScript icon" />
                         <p class="black-p-header-small">JavaScript</p>
                     </div>
                     <div class="wrap">
-                        <img class="skill-icon-small" src="/icons/threejs.svg">
+                        <img class="skill-icon-small" src="/icons/threejs.svg" alt="Three.js icon" />
                         <p class="black-p-header-small">Three.js</p>
                     </div>
                     <div class="wrap">
-                        <img class="skill-icon-small" src="/icons/php.svg">
+                        <img class="skill-icon-small" src="/icons/php.svg" alt="PHP icon" />
                         <p class="black-p-header-small">PHP</p>
                     </div>
                     <div class="wrap">
-                        <img class="skill-icon-small" src="/icons/mysql.svg">
+                        <img class="skill-icon-small" src="/icons/mysql.svg" alt="MySQL icon" />
                         <p class="black-p-header-small">MySQL</p>
                     </div>
                 </div>
+
                 <div class="text-wrap">
-                    <p class="black-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p class="black-p">Pucci Games is a site about the video games I make.</p>
+                    <p class="black-p">I like to make games on my freetime using GameMaker Studio and Photoshop, and I keep all my progress about my games here!</p>
+                    <p class="black-p">I use PHP and MySQL on the back-end, the code is object oriented and structured after the MVC(Model View Controller) pattern.</p>
+                    <p class="black-p">The back-end is needed for having a blog, posting updates about my games, submitting game assets and allowing people to create users and leave comments to all my conent.</p>
+                    <p class="black-p">I use JavaScript and Three.js on the front-end. Minor functionalities are made with JavaScript and all 3D graphics are made with Three.js.</p>
                 </div>
                 <div class="skills-inner">
-                    <a href="https://www.puccigames.com" target="_blank"><button class="btn">View<img class="btn-icon" src="/icons/eye.svg"></button></a>
-                    <a><button class="btn">Code<img class="btn-icon" src="/icons/code.svg"></button></a>
+                    <a href="https://www.puccigames.com" target="_blank" class="btn website-tab">View<img class="btn-icon" src="/icons/eye.svg" alt="View icon" /></a>
+
+                    <a href="https://github.com/FredrikAndreHansen/PucciGames" target="_blank" class="btn website-tab">Code<img class="btn-icon" src="/icons/code.svg" alt="Code icon" /></a>
                 </div>
             </div>
 
             <div class="project-element">
                 <div class="monitor-wrapper-right">
-                    <img class="project-content" src="/images/puccigamesPC.png" />
-                    <img class="monitor-cover-right-img" src="/images/monitorcover.png" />
+                    <img class="project-content" src="/images/puccigamesPC.jpg" alt="Pucci Games front page cover for PC" />
+                    <img class="monitor-cover-right-img" src="/images/monitorcover.png" alt="Monitor cover" />
                 </div>
                 <div class="phone-wrapper-right">
-                    <img class="project-content" src="/images/puccigamesMobile.png" />
-                    <img class="phone-cover-right-img" src="/images/phonecover.png" />
+                    <img class="project-content" src="/images/puccigamesMobile.jpg" alt="Pucci Games front page cover for phone" />
+                    <img class="phone-cover-right-img" src="/images/phonecover.png" alt="Phone cover" />
                 </div>
             </div>
         </div>
+        <!-- End of monitor view -->
         <!-- End of Project 1-->
 
         <div class="large-space"></div>
 
         <!-- Project 2-->
-        <div class="project-wrapper2">
+         <!-- Phone view-->
+         <div class="remove-on-monitor">
+            <h3 class="red-h3">Yggdrasil Services</h3>
+            <p class="black-p-header">Made with</p>
+
+            <div class="skills-inner-phone">
+                <div class="wrap-phone">                
+                    <img class="skill-icon-small" src="/icons/wordpress.svg" alt="WordPress icon" />
+                    <p class="black-p-header-small">WordPress</p>
+                </div>
+            </div>
+
+            <div class="skills-inner-phone">
+                <div class="monitor-wrapper-phone">
+                    <img class="project-content" src="/images/yggdrasilservicesPC.jpg" alt="Pucci Games front page cover for PC" />
+                    <img class="monitor-cover-right-img" src="/images/monitorcover.png" alt="Monitor cover" />
+                </div>
+            </div>
+
+            <div class="text-wrap">
+                <p class="black-p">Yggdrasil Services is mainly focused about Online Scandinavian language courses. It also have other services as: translations, localization, SEO and web design.</p>
+                <p class="black-p">The site is made with WordPress using the Hestia theme, with some custom CSS alterations.</p>
+                <p class="black-p">Mainly, the customers are American so I am using the "WOOCS - WooCommerce Currency Switcher" plugin to convert the curreny.</p>
+                <p class="black-p">The payment gateway is Stripe and PayPal so I use the "WooCommerce Stripe Gateway" and "WooCommerce PayPal Checkout Gateway" together with "WooCommerce" to handle payments.</p>
+            </div>
+
+            <div class="skills-inner-phone">
+                <a href="https://www.yggdrasilservices.com" target="_blank" class="btn website-tab">View<img class="btn-icon" src="/icons/eye.svg" alt="View icon" /></a>
+            </div>
+
+        </div>
+        <!-- End of phone view -->
+        <!-- Monitor view-->
+        <div class="project-wrapper2 remove-on-phone">
 
             <div class="project-element">
                 <div class="monitor-wrapper-left">
-                    <img class="project-content" src="/images/yggdrasilservicesPC.png" />
-                    <img class="monitor-cover-right-img" src="/images/monitorcover.png" />
+                    <img class="project-content" src="/images/yggdrasilservicesPC.jpg" alt="Yggdrasil Services front page cover for PC" />
+                    <img class="monitor-cover-right-img" src="/images/monitorcover.png" alt="Monitor cover" />
                 </div>
                 <div class="phone-wrapper-left">
-                    <img class="project-content" src="/images/yggdrasilservicesMobile.png" />
-                    <img class="phone-cover-right-img" src="/images/phonecover.png" />
+                    <img class="project-content" src="/images/yggdrasilservicesMobile.jpg" alt="Yggdrasil Services front page cover for phone" />
+                    <img class="phone-cover-right-img" src="/images/phonecover.png" alt="Phone cover" />
                 </div>
             </div>
 
@@ -182,78 +424,122 @@
                 <p class="black-p-header">Made with</p>
                 <div class="skills-inner">
                     <div class="wrap">
-                        <img class="skill-icon-small" src="/icons/wordpress.svg">
+                        <img class="skill-icon-small" src="/icons/wordpress.svg" alt="WordPress icon" />
                         <p class="black-p-header-small">WordPress</p>
                     </div>
                 </div>
                 
                 <div class="text-wrap">
-                <p class="black-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p class="black-p">Yggdrasil Services is mainly focused about Online Scandinavian language courses. It also have other services as: translations, localization, SEO and web design.</p>
+                <p class="black-p">The site is made with WordPress using the Hestia theme, with some custom CSS alterations.</p>
+                <p class="black-p">Mainly, the customers are American so I am using the "WOOCS - WooCommerce Currency Switcher" plugin to convert the curreny.</p>
+                <p class="black-p">The payment gateway is Stripe and PayPal so I use the "WooCommerce Stripe Gateway" and "WooCommerce PayPal Checkout Gateway" together with "WooCommerce" to handle payments.</p>
                 </div>
                 <div class="skills-inner">
-                    <a href="https://www.yggdrasilservices.com" target="_blank"><button class="btn">View<img class="btn-icon" src="/icons/eye.svg"></button></a>
+                    <a href="https://www.yggdrasilservices.com" target="_blank" class="btn website-tab">View<img class="btn-icon" src="/icons/eye.svg" alt="View icon" /></a>
                 </div>
             </div>
 
         </div>
+        <!-- End of monitor view -->
         <!-- End of Project 2-->
 
         <div class="large-space"></div>
 
         <!-- Project 3-->
-        <div class="project-wrapper3">
+        <!-- Phone view-->
+        <div class="remove-on-monitor">
+            <h3 class="red-h3">High Tech Solutions</h3>
+            <p class="black-p-header">Made with</p>
+        
+            <div class="skills-inner-phone">
+                <div class="wrap-phone">                
+                    <img class="skill-icon-small" src="/icons/wordpress.svg" alt="WordPress icon" />
+                    <p class="black-p-header-small">WordPress</p>
+                </div>
+            </div>
+
+            <div class="skills-inner-phone">
+                <div class="monitor-wrapper-phone">
+                    <img class="project-content" src="/images/htsolutionsPC.jpg" alt="High Tech Solutions front page cover for PC" />
+                    <img class="monitor-cover-right-img" src="/images/monitorcover.png" alt="Monitor cover" />
+                </div>
+            </div>
+        
+            <div class="text-wrap">
+                <p class="black-p">High Tech Solutions is a organization that helps with digitalizing, counseling about products, services and prosesses to other startup companies.</p>
+                <p class="black-p">I was their web designer back in 2017/18! I then made their website with WordPress using the Shapely theme.</p>
+                <p class="black-p">The webiste is a static site containing information about their company. I had a focus on making is accessible to everyone and easy to find when searching.</p>
+            </div>
+        
+            <div class="skills-inner-phone">
+                <a href="https://www.ht-solutions.no" target="_blank" class="btn website-tab">View<img class="btn-icon" src="/icons/eye.svg" alt="View icon" /></a>
+            </div>
+        
+        </div>
+        <!-- End of phone view -->
+        <!--Monitor view-->
+        <div class="project-wrapper3 remove-on-phone">
 
             <div class="project-element">
                 <h3 class="red-h3">High Tech Solutions</h3>
                 <p class="black-p-header">Made with</p>
                 <div class="skills-inner">
                     <div class="wrap">
-                        <img class="skill-icon-small" src="/icons/wordpress.svg">
+                        <img class="skill-icon-small" src="/icons/wordpress.svg" alt="WordPress icon" />
                         <p class="black-p-header-small">WordPress</p>
                     </div>
                 </div>
                 <div class="text-wrap">
-                    <p class="black-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p class="black-p">High Tech Solutions is a organization that helps with digitalizing, counseling about products, services and prosesses to other startup companies.</p>
+                    <p class="black-p">I was their web designer back in 2017/18! I then made their website with WordPress using the Shapely theme.</p>
+                    <p class="black-p">The webiste is a static site containing information about their company. I had a focus on making is accessible to everyone and easy to find when searching.</p>
                 </div>
                 <div class="skills-inner">
-                    <a href="https://www.ht-solutions.no" target="_blank"><button class="btn">View<img class="btn-icon" src="/icons/eye.svg"></button></a>
+                    <a href="https://www.ht-solutions.no" target="_blank" class="btn website-tab">View<img class="btn-icon" src="/icons/eye.svg" alt="View icon" /></a>
                 </div>
             </div>
         
             <div class="project-element">
                 <div class="monitor-wrapper-right2">
-                    <img class="project-content" src="/images/htsolutionsPC.png" />
-                    <img class="monitor-cover-right-img" src="/images/monitorcover.png" />
+                    <img class="project-content" src="/images/htsolutionsPC.jpg" alt="High Tech Solutions front page cover for PC" />
+                    <img class="monitor-cover-right-img" src="/images/monitorcover.png" alt="Monitor cover" />
                 </div>
                 <div class="phone-wrapper-right2">
-                    <img class="project-content" src="/images/htsolutionsMobile.png" />
-                    <img class="phone-cover-right-img" src="/images/phonecover.png" />
+                    <img class="project-content" src="/images/htsolutionsMobile.jpg" alt="High Tech Solutions front page cover for phone" />
+                    <img class="phone-cover-right-img" src="/images/phonecover.png" alt="Phone cover" />
                 </div>
             </div>
         </div>
+        <!--End of monitor view-->
         <!-- End of Project 3-->
 
-    <div class="large-space"></div>
+    <div class="large-space remove-on-phone"></div>
+    <div class="medium-space remove-on-monitor"></div>
     
-    <div class="skills-inner">
-    <a href="#"><button class="btn-yellow">View All Projects<img class="btn-icon" src="/icons/documents.svg"></button></a>
+    <div class="skills-inner remove-on-phone">
+    <button class="btn-yellow projects-selector website-tab">View All Projects<img class="btn-icon" src="/icons/documents.svg" alt="All projects icon" /></button>
+    </div>
+
+    <div class="skills-inner-phone remove-on-monitor">
+        <button class="btn-yellow projects-selector website-tab">View All Projects<img class="btn-icon" src="/icons/documents.svg" alt="All projects icon" /></button>
     </div>
 
     <div class="medium-space"></div>
 
     </section>
 
-    <section class="contact-section">
+    <section class="contact-section" id="contact-id">
 
     <div class="small-space"></div>
 
     <h3 class="landing-h1-white">Contact</h3>
 
-    <form>
-        <input type="text" placeholder="Name" class="input" maxlength="20" required>
-        <input type="email" placeholder="Email" class="input" maxlength="50" required>
-        <textarea placeholder="Message" class="textarea" rows="2" maxlength="500" required></textarea>
-        <button type="submit" class="btn">Submit<img class="btn-icon-small" src="/icons/arrowright.svg"></button>
+    <form method="POST" class="contact-form">
+        <input type="text" placeholder="Name" class="input website-tab input-name" maxlength="20" required>
+        <input type="email" placeholder="Email" class="input website-tab input-email" maxlength="50" required>
+        <textarea placeholder="Message" class="textarea website-tab message" rows="2" maxlength="500" required></textarea>
+        <button type="submit" class="btn website-tab">Submit<img class="btn-icon-small" src="/icons/arrowright.svg" alt="Arrow right icon" /></button>
     </form>
 
     <div class="small-space"></div>
@@ -261,22 +547,24 @@
     </section>
 
     <section class="footer">
-        <p class="footer-text">©2023 - Fredrik Palladino Hansen</p>
-
+        <p class="footer-text remove-on-phone">©2023 - Fredrik Palladino Hansen</p>
+        <p class="footer-text remove-on-monitor">©2023<br>Fredrik Palladino Hansen</p>
         <div>
             <div class="footer-icon-wrapper sosial-link">
-                <a href="https://www.linkedin.com/in/fredrik-palladino-hansen-b92187119" target="_blank">
-                <img class="sosial-img-footer" src="/icons/linkedin-white.svg">
+                <a href="https://www.linkedin.com/in/fredrik-palladino-hansen-b92187119" target="_blank" class="website-tab">
+                <img class="sosial-img-footer" src="/icons/linkedin-white.svg" alt="LinkedIn icon" />
                 </a>
             </div>
 
             <div class="footer-icon-wrapper sosial-link">
-                <a href="https://github.com/fredrikAndreHansen" target="_blank">
-                <img class="sosial-img-footer" src="/icons/github-white.svg">
+                <a href="https://github.com/fredrikAndreHansen" target="_blank" class="website-tab">
+                <img class="sosial-img-footer" src="/icons/github-white.svg" alt="GitHub icon" />
                 </a>
             </div>
         </div>
     </section>
 
+    </div>
+    
 </body>
 </html>
