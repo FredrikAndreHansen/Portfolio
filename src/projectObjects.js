@@ -147,7 +147,7 @@ const yggdrasilServicesInfo = {
                 </div>
 
                 <div class="text-wrap">
-                    <p class="white-p-projects-container">Yggdrasil Services is mainly focused about Online Scandinavian language courses. It also have other services as: translations, localization, SEO and web design.</p>
+                    <p class="white-p-projects-container">Yggdrasil Services is mainly focused on Online Scandinavian language courses. It also have other services as: translations, localization, SEO and web design.</p>
                     <p class="white-p-projects-container">The site is made with WordPress using the Hestia theme, with some custom CSS alterations.</p>
                     <p class="white-p-projects-container">Mainly, the customers are American so I am using the "WOOCS - WooCommerce Currency Switcher" plugin to convert the curreny.</p>
                     <p class="white-p-projects-container">The payment gateway is Stripe and PayPal so I use the "WooCommerce Stripe Gateway" and "WooCommerce PayPal Checkout Gateway" together with "WooCommerce" to handle payments.</p>
