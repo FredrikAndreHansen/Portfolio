@@ -78,7 +78,7 @@ const pucciGamesInfo = {
                     <p class="white-p-projects-container">Pucci Games is a site about the video games I make.</p>
                     <p class="white-p-projects-container">I like to make games on my freetime using GameMaker Studio and Photoshop, and I keep all my progress about my games here!</p>
                     <p class="white-p-projects-container">I use PHP and MySQL on the back-end, the code is object oriented and structured after the MVC(Model View Controller) pattern.</p>
-                    <p class="white-p-projects-container">The back-end is needed for having a blog, posting updates about my games, submitting game assets and allowing people to create users and leave comments to all my conent.</p>
+                    <p class="white-p-projects-container">The back-end is needed for having a blog, posting updates about my games, submitting game assets and allowing people to create users and leave comments to all my content.</p>
                     <p class="white-p-projects-container">I use JavaScript and Three.js on the front-end. Minor functionalities are made with JavaScript and all 3D graphics are made with Three.js.</p>
                 </div>
             </div>
