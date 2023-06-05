@@ -10,7 +10,7 @@ In the style folder you will find all the CSS files, each file is for different 
 In the src folder you will find all the JavaScript files.
 
 index.js:
-Is the main file, all other files are imported directly or indirectly (meaning that a file is not imported into index.js but the other file it is imported into are!).
+Is the main file, all other files are imported directly or indirectly into it.
 This file contains all event handlers and call to all functions perfomed on the main web page!
 
 helpers.js:
