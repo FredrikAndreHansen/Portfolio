@@ -2,7 +2,7 @@
 My personal portfolio to showcase my work.
 The link to the site is: https://fphportfolio.netlify.app
 
-Main page is index.html 
+Main page is index.html
 
 In the icons folder you will find all the icons.
 In the images folder you will find all the images.
