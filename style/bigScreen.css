@@ -147,6 +147,10 @@ a {
         display: none;
     }
 }
+.pointer-intro:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
 .skills {
     background: var(--black);
     width: 70%;

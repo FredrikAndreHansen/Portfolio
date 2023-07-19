@@ -361,6 +361,10 @@ a {
     cursor: pointer;
     opacity: 0.5;
 }
+.pointer-intro:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
 .main-menu-back {
     z-index: 4;
     position: fixed;

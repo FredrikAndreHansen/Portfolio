@@ -409,6 +409,10 @@ a {
         margin: 16px 4px 0px 4px;
     }
 }
+.pointer-intro:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
 .wrap-phone {
     display: inline-block;
     justify-content: center;

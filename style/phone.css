@@ -192,6 +192,10 @@ a {
         height: 50%;
     }
 }
+.pointer-intro:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
 .mobile-menu-item:hover {
     cursor: pointer;
     opacity: 0.5;
