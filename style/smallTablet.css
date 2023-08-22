@@ -2,8 +2,8 @@
     --red: #A52A2A;
     --black: #3C1E11;
     --white: #F0FFFF;
-    --yellow: #FFD700;
-    --light-yellow: #FFF4B3;
+    --yellow: #DAA520;
+    --light-yellow: #D2B48C;
     --header1: 'Righteous', cursive;
     --header2: 'Alata', sans-serif;
     --big: 3em;
@@ -366,7 +366,7 @@ a {
 .skills-inner {
     display: grid;
     justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     padding: 0px 10% 0px 10%;
 }
 @media (max-height: 500px) {

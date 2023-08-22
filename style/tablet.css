@@ -2,8 +2,8 @@
     --red: #A52A2A;
     --black: #3C1E11;
     --white: #F0FFFF;
-    --yellow: #FFD700;
-    --light-yellow: #FFF4B3;
+    --yellow: #DAA520;
+    --light-yellow: #D2B48C;
     --header1: 'Righteous', cursive;
     --header2: 'Alata', sans-serif;
     --big: 4em;
@@ -12,7 +12,7 @@
     --mid-small: 1.5em;
     --extra-small: 1em;
     --x-extra-small: 0.8em;
-    --large-space: 200px;
+    --large-space: 400px;
     --medium-space: 100px;
     --small-space: 50px;
     --extra-small-space: 12px;
@@ -175,12 +175,17 @@ a {
     display: flex;
     justify-content: center;
 }
+.skills-inner-tablet {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
 .wrap {
     display: inline-block;
     position: relative;
     justify-content: center;
     text-align: center;
-    margin: 16px;
+    margin: 0.5vw 0.5vw 3vw 0.5vw;
 }
 .skill-icon {
     width: var(--big);

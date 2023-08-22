@@ -2,8 +2,8 @@
     --red: #A52A2A;
     --black: #3C1E11;
     --white: #F0FFFF;
-    --yellow: #FFD700;
-    --light-yellow: #FFF4B3;
+    --yellow: #DAA520;
+    --light-yellow: #D2B48C;
     --header1: 'Righteous', cursive;
     --header2: 'Alata', sans-serif;
     --big: 4vw;
@@ -172,7 +172,7 @@ a {
     position: relative;
     justify-content: center;
     text-align: center;
-    margin: 1vw;
+    margin: 0.8vw;
 }
 .skill-icon {
     width: var(--big);

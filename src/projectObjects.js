@@ -4,7 +4,7 @@ const pucciGamesInfo = {
         <button class="nobtn project-container projects-tab" id="pucci-games">
             <h3 class="red-h3">Pucci Games</h3>
 
-            <p class="black-p-header">My portfolio for Game Design</p>
+            <p class="black-p-header">Blog & Portfolio</p>
 
             <div class="wrap-project-section">
                 <img class="skill-icon-project-section" src="/icons/javascript.svg" alt="JavaScript icon" />       
@@ -102,7 +102,7 @@ const yggdrasilServicesInfo = {
     container:`
         <button class="nobtn project-container projects-tab" id="yggdrasil-services">
             <h3 class="red-h3">Yggdrasil Services</h3>
-            <p class="black-p-header">A WordPress eCommerce website</p>
+            <p class="black-p-header">eCommerce for Online Language Courses</p>
 
             <div class="wrap-project-section">
                 <img class="skill-icon-project-section" src="/icons/wordpress.svg" alt="WordPress icon" />
@@ -171,7 +171,7 @@ const highTechSolutionsInfo = {
     container:`
         <button class="nobtn project-container projects-tab" id="high-tech-solutions">
             <h3 class="red-h3">High Tech Solutions</h3>
-            <p class="black-p-header">A static WordPress website</p>
+            <p class="black-p-header">Static Website</p>
 
             <div class="wrap-project-section">
                 <img class="skill-icon-project-section" src="/icons/wordpress.svg" alt="WordPress icon" />
