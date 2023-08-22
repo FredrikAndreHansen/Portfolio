@@ -303,11 +303,13 @@ a {
     transform: translate(-50%, -50%);
     width: 90%;
 }
-@media (min-height: 651px) {
+@media (min-height: 721px) {
     .skills-align {
         z-index: 2;
         position: relative;
         width: 100%;
+        margin-top: 64px;
+        margin-bottom: 32px;
         display: inline-block;
         display: flex;
         justify-content: center;
@@ -332,13 +334,13 @@ a {
         animation-iteration-count: infinite;
     }
 }
-@media (max-height: 650px) {
+@media (max-height: 720px) {
     .skills-align {
         z-index: 2;
         position: relative;
         width: 100%;
         display: flex;
-        margin-top: -32px;
+        margin-top: 32px;
         margin-bottom: 32px;
         justify-content: center;
         align-items: center;
